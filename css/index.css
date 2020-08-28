@@ -1,0 +1,137 @@
+@font-face {
+    font-family: CircularStd-Book;
+    src: url("../assets/CircularStd-Book.woff") format("woff");
+}
+@font-face {
+    font-family: CircularStd-Bold;
+    src: url("../assets/CircularStd-Bold.woff") format("woff");
+}
+
+html, body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.carousel-image{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.subcount_nav_item > *{
+    margin: 0;
+}
+.pad-50{
+    height: 50px;
+}
+#mainNav{
+    background-color: #ff003f;
+}
+#ipd-title, .nav-link{
+    font-family: 'CircularStd-Bold', sans-serif;
+    font-size: 12px;
+}   
+#ipd-title{
+    font-weight: bolder;
+    color: #fff;
+}
+.nav-link{
+    font-size: 20px;
+}
+h1{
+    font-family: CircularStd-Bold, sans-serif;
+    font-weight: bolder; 
+    font-size: 2.5em; 
+    font-weight: 200;
+}
+p{
+    font-family: 'CircularStd-Book', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+}
+.banner-content{
+    color: #fff;
+}
+.carousel-content-btn{
+    font-family: 'CircularStd-Bold', sans-serif;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 500;
+    background-color: #ff003f;
+    color: #fff !important;
+    border: none;
+    cursor: pointer;
+}
+.carousel-content-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.pewds-images{
+    max-height: 300px;
+    display: none;
+}
+
+#slide-1, #slide-2, #slide-3, #slide-4{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#slide-image{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+#image-carousel{
+    background-color: #000;
+}
+.card{
+    width: 90vw;
+}
+#WhoIsPewDiePie-Span{
+    display: block;
+}
+.sticky-social{
+    position: fixed;
+    flex-direction: row;
+    right: 0;
+    bottom: 0;
+    background-color: #ff003f;
+    z-index: 100;
+}
+
+@media (min-width: 922px){
+    .nav-link{
+        max-height: 100%;
+        background-color: #ff003f;
+        color: #fff;
+    }
+    .pewds-images{
+        width: auto;
+        display: block;
+    }
+    #WhoIsPewDiePie-Span{
+        display: inline;
+    }
+    p{
+        font-size: 1.55em;
+    }
+    .card{
+        width: 20vw;
+    }
+    .nav-link:hover{
+        background-color: #fff;
+        color: #000 !important;
+    }
+    #slide-1, #slide-2, #slide-3, #slide-4{
+        text-align: right;
+        transform: translate(0%, 0%);
+        top: 20%;
+    }
+    #slide-1{
+        left: 15%;
+    }
+    #slide-2, #slide-3, #slide-4{
+        right: 15%;
+    }
+}

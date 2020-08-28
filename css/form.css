@@ -1,0 +1,69 @@
+@font-face {
+    font-family: CircularStd-Book;
+    src: url("../assets/CircularStd-Book.woff") format("woff");
+}
+@font-face {
+    font-family: CircularStd-Bold;
+    src: url("../assets/CircularStd-Bold.woff") format("woff");
+}
+body { 
+    background: url('../assets/wave-dark.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+}
+#mainNav{
+    background-color: #ff003f;
+}
+#ipd-title, .nav-link{
+    font-family: 'CircularStd-Bold', sans-serif;
+    font-size: 12px;
+}   
+#ipd-title{
+    font-weight: bolder;
+    color: #fff;
+}
+.nav-link{
+    font-size: 20px;
+}
+.irl-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+}
+h1{
+    font-family: 'CircularStd-Bold', sans-serif;
+}
+p{
+    font-family: 'CircularStd-Book', sans-serif;
+    font-size: 1.35em;
+}
+.submit-form{
+    width: 90vw;
+    border: 1px solid #f9013f;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+@media (min-width: 922px) {
+    .nav-link{
+        max-height: 100%;
+        background-color: #ff003f;
+        color: #fff;
+    }
+    .nav-link:hover{
+        background-color: #fff;
+        color: #000 !important;
+    }
+    .irl-form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+    }
+}

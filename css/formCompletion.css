@@ -1,0 +1,49 @@
+@font-face {
+    font-family: CircularStd-Book;
+    src: url("../assets/CircularStd-Book.woff") format("woff");
+}
+@font-face {
+    font-family: CircularStd-Bold;
+    src: url("../assets/CircularStd-Bold.woff") format("woff");
+}
+
+#mainNav{
+    background-color: #ff003f;
+}
+#ipd-title, .nav-link{
+    font-family: 'CircularStd-Bold', sans-serif;
+    font-size: 12px;
+}   
+#ipd-title{
+    font-weight: bolder;
+    color: #fff;
+}
+.nav-link{
+    font-size: 20px;
+}
+.link-btn{
+    font-family: 'CircularStd-Bold', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    background-color: #ff003f;
+    color: #fff !important;
+    border: none;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (min-width: 922px) {
+    .nav-link{
+        max-height: 100%;
+        background-color: #ff003f;
+        color: #fff;
+    }
+    .nav-link:hover{
+        background-color: #fff;
+        color: #000 !important;
+    }
+}

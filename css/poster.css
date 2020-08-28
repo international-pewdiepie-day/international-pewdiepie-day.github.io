@@ -1,0 +1,98 @@
+@font-face {
+    font-family: CircularStd-Book;
+    src: url("../assets/CircularStd-Book.woff") format("woff");
+}
+@font-face {
+    font-family: CircularStd-Bold;
+    src: url("../assets/CircularStd-Bold.woff") format("woff");
+}
+
+html, body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+*, a{
+    font-family: 'CircularStd-Book', sans-serif !important;
+}
+h1, p{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-family: 'CircularStd-Bold', sans-serif !important;
+}
+.main-content{
+    display: none;
+}
+#mainNav{
+    background-color: #ff003f;
+}
+#ipd-title, .nav-link{
+    font-family: 'CircularStd-Bold', sans-serif;
+    font-size: 12px;
+    color: #fff;
+}   
+#ipd-title{
+    font-weight: bolder;
+    color: #fff;
+}
+.nav-link{
+    font-size: 20px;
+}
+.nav-link{
+    max-height: 100%;
+    background-color: #ff003f;
+    color: #fff;
+}
+.nav-link:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+#poster-welcome{
+    top: 25%;
+    right: 10%;
+}
+.poster-welcome-title{
+    font-size: 4em;
+}
+.poster-welcome-content{
+    font-size: 2em;
+}
+.poster-showcase{
+    max-height: 500px;
+}
+.poster-download-btn{
+    font-family: 'CircularStd-Bold', sans-serif;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff !important;
+    border: none;
+    cursor: pointer;
+}
+.sticky-social{
+    position: fixed;
+    flex-direction: row;
+    right: 0;
+    bottom: 0;
+    background-color: #ff003f;
+    z-index: 100;
+}
+.disclaimer{
+    position: fixed;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 922px){
+    #poster-welcome{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+    }
+}
